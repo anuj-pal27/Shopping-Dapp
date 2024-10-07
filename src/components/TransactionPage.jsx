@@ -103,7 +103,7 @@ const TransactionPage = () => {
           className="border border-gray-600 rounded-lg h-10 px-4"
         />
         <button
-          className="rounded-lg h-12 px-2 bg-[#512da8] disabled:bg-gray-700"
+          className="rounded-lg h-12 px-2 bg-green-700 hover:bg-green-700 disabled:bg-slate-400"
           onClick={() => sendTokens(toPublicKey)}
           disabled={!toPublicKey || !amount || loading}
         >

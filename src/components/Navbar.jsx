@@ -8,15 +8,16 @@ export const Navbar = ({ children }) => {
     <>
       <nav className="flex flex-row justify-between items-center h-20 bg-[#0f172a] w-full sticky top-0 z-50">
         <NavLink to="/">
-          <div className="ml-5">
-            <img
+          <div className="ml-16">
+            {/* <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqsnikMXVWzgf3OpKVFUgDqMWiKh2Obn6fMDGpEGkMC6IqKJLLvH63VqaZ6PCgzZ9eACk&usqp=CAU"
               className="h-20"
               alt="logo"
-            />
+            /> */}
+            <h1 className="text-purple-400 font-bold text-xl border p-2 hover:text-green-600 rounded-full">ShopDapp</h1>
           </div>
         </NavLink>
-        <div className="flex items-center font-medium text-slate-100 mr-5 space-x-6">
+        <div className="flex items-center font-medium text-slate-100 mr-16 space-x-6">
           <NavLink
             to="/"
             className="hover:text-green-600 hover:scale-110 transition-all duration-300 p-2"

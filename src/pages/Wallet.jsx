@@ -28,7 +28,7 @@ function Wallet() {
         }
         autoConnect
       >
-        <div className="md:w-1/2 w-11/12 mx-auto p-6 my-[10vh] rounded-lg border border-black/30 bg-slate-300">
+        <div className="md:w-1/2 w-11/12 mx-auto p-6 my-[10vh] rounded-lg shadow-2xl border-y-4  border-green-400  bg-white">
           <WalletProvider wallets={[]} autoConnect>
             <WalletModalProvider>
               <div className="flex justify-center gap-8">
@@ -38,24 +38,24 @@ function Wallet() {
               <div className="flex justify-between my-8 px-8">
                 <button
                   className={`h-10 rounded-lg font-semibold w-1/4 border border-black/30 ${
-                    section === "airdrop" ? "bg-[#512da8]" : "bg-[#374151]"
-                  }`}
+                    section === "airdrop" ? "bg-green-700" : "bg-green-200"
+                  } hover:bg-green-700`}
                   onClick={() => handleSectionChange("airdrop")}
                 >
                   AirDrop
                 </button>
                 <button
                   className={`h-10 rounded-lg font-semibold w-1/4 border border-black/30 ${
-                    section === "transaction" ? "bg-[#512da8]" : "bg-[#374151]"
-                  }`}
+                    section === "transaction" ? "bg-green-700" : "bg-green-200"
+                  } hover:bg-green-700`}
                   onClick={() => handleSectionChange("transaction")}
                 >
                   Transaction
                 </button>
                 <button
                   className={`h-10 rounded-lg font-semibold w-1/4 border border-black/30 ${
-                    section === "verify" ? "bg-[#512da8]" : "bg-[#374151]"
-                  }`}
+                    section === "verify" ? "bg-green-700" : "bg-green-200"
+                  } hover:bg-green-700`}
                   onClick={() => handleSectionChange("verify")}
                 >
                   Verify Message

@@ -38,10 +38,10 @@ const AirdropPage = () => {
           placeholder="Amount"
           value={amount}
           onChange={(event) => handleChange(event)}
-          className="border border-gray-600 rounded-lg h-10 px-4 w-4/6"
+          className="border border-gray-600 rounded-lg h-10 px-4 w-4/6 "
         />
         <button
-          className="rounded-lg h-10 px-2 bg-[#512da8] disabled:bg-gray-700"
+          className="rounded-lg h-10 px-2 bg-green-200 hover:bg-green-700  disabled:bg-slate-300"
           onClick={sendAirDropToUser}
           disabled={!amount}
         >
